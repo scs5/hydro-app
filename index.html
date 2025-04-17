@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Export UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Export Project</h2>
+    
+    <div class="form-group">
+      <label for="engineer">Engineer</label>
+      <input type="text" id="engineer" name="engineer" placeholder="Enter your name"/>
+    </div>
+
+    <div class="form-group">
+      <label for="projectName">Project Name</label>
+      <input type="text" id="projectName" name="projectName" placeholder="Enter project name"/>
+    </div>
+
+    <div class="form-group file-upload">
+      <label class="file-label" for="projectFile">
+        Select Project File
+      </label>
+      <input type="file" id="projectFile" name="projectFile"/>
+      <span id="projectFileName" style="margin-left: 10px;"></span>
+    </div>
+
+    <div class="form-group file-upload">
+      <label class="file-label" for="inventoryFile">
+        Select Inventory File
+      </label>
+      <input type="file" id="inventoryFile" name="inventoryFile"/>
+      <span id="inventoryFileName" style="margin-left: 10px;"></span>
+    </div>
+
+    <button class="export-btn" id="exportBtn">Export</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
